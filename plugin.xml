@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="fi.palmu.soundroute" version="0.0.1">
+    <name>cordova-plugin-soundroute</name>
+    <description>Cordova SoundRoute plugin to change playback output device</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,sound</keywords>
+    <js-module src="www/soundroute.js" name="soundroute">
+        <clobbers target="soundroute" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SoundRoute">
+                <param name="ios-package" value="PALMUSoundRoute"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/PALMUSoundRoute.h" />
+        <source-file src="src/ios/PALMUSoundRoute.m" />
+    </platform>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+          <feature name="SoundRoute">
+            <param name="android-package" value="fi.palmu.soundroute.PalmuSoundRoute" />
+            <param name="onload" value="true" />
+          </feature>
+        </config-file>
+        <source-file src="src/android/PalmuSoundRoute.java" target-dir="src/fi/palmu/soundroute" />
+    </platform>
+</plugin>
