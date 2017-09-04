@@ -24,7 +24,7 @@ public class PalmuSoundRoute extends CordovaPlugin{
                         m_amAudioManager = (AudioManager) cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
 
                         if (type.equals("Receiver")) {
-                            mode = AudioManager.MODE_IN_CALL;
+                            mode = AudioManager.MODE_IN_COMMUNICATION;
                         }
 
                         m_amAudioManager.setMode(mode);
