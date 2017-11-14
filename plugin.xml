@@ -25,5 +25,6 @@
           </feature>
         </config-file>
         <source-file src="src/android/PalmuSoundRoute.java" target-dir="src/fi/palmu/soundroute" />
+        <hook type="after_plugin_add" src="src/android/hooks/edit_main_activity.js" />
     </platform>
 </plugin>
