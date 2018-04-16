@@ -1,0 +1,14 @@
+{
+  "name": "cordova-plugin-soundroute",
+  "version": "1.0.0",
+  "description": "Cordova plugin for routing audio through either earpiece or speaker.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://spheroid-@github.com/spheroid-/cordova-plugin-soundroute.git"
+  },
+  "author": "Henry Jalonen <henry.jalonen@palmu.fi>",
+  "license": "ISC"
+}
